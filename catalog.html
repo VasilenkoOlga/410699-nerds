@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия «Nёrds»</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,500,700,300&subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -13,7 +16,7 @@
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Новости</a></li>
-          <li><a href="#">Магазин</a></li>
+          <li class="active"><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <div class="basket">
@@ -27,15 +30,28 @@
         <h2 class="visually-hidden">Фильтры товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-            <legend>Стоимость:</legend>
-            <input type="range" min="0" max="15000" step="1000">
-            <p>От <span>0</span> До <span>15 000</span></p>
+            <legend class="price">Стоимость:</legend>
+              <div class="range">
+                <div class="range-line>">
+                  <div class="range-scale"></div>
+                </div>
+                <div class="range-btn range-btn-min"></div>
+                <div class="range-btn range-btn-max"></div>
+              </div>
+              <div class="range-filter">
+                <label>
+                  от <input type="text" value="0">
+                </label>
+                <label>
+                  до <input type="text" value="15000">
+                </label>
+              </div>
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-option-grid" value="Adaptive" id="Adaptive">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-option-grid" value="Adaptive" id="Adaptive" checked>
                   <label for="Adaptive">Адаптивная</label>
                 </li>
                 <li class="filter-option">
@@ -80,7 +96,7 @@
         <div class="sorting">
           <p class="sorting-title">Сортировать:</p>
           <ul class="sorting-list">
-            <li><a href="#" class="sorting-text">По цене</a></li>
+            <li><a href="#" class="sorting-text-active">По цене</a></li>
             <li><a href="#" class="sorting-text">По типу</a></li>
             <li><a href="#" class="sorting-text">По функционалу</a></li>
           </ul>
@@ -186,9 +202,9 @@
         </ul>
         <ul class="pagination">
           <li class="active-page"><a href="#">1</a></li>  
-          <li><a href="#">2</a></li>  
-          <li><a href="#">3</a></li>
-          <li><a href="#">Следующая</a></li>  
+          <li class="page"><a href="#">2</a></li>  
+          <li class="page"><a href="#">3</a></li>
+          <li class="page"><a href="#">Следующая</a></li>  
         </ul> 
       </section>
     </main>
@@ -197,10 +213,11 @@
         <img src="img/map.jpg" alt="Карта">
         <img src="img/map-marker.png" alt="Маркер">
         <div class="map-contacts">
-          <b>nёrds design studio</b>       
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. <span>+7(812)275-75-75</span></p>
-          <a href="#">Напишите нам</a>
+          <b>NЁRDS DESIGN STUDIO</b>       
+          <p>191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7(812)275-75-75</p>
+          <a class="btn btn-contacts" href="#">Напишите нам</a>
         </div>  
       </div>      
       <div class="footer-social">
@@ -214,18 +231,19 @@
       </div>
     </footer> 
     
-    <section class="modal modal-basket">
-      <h2>Напишите нам</h2>
-        <label for="user-name">Ваше имя</label>
-        <p><input type="text" name="user-name" id="user-name" placeholder="Представьтесь, пожалуйста"></p>
-        <label for="email">Ваш e-mail</label>
-        <p><input type="text" name="email" id="email" placeholder="Для отправки ответа"></p>
-        <label for="letter">Текст письма:</label>
-        <p><textarea id="letter" placeholder="В свободной форме"></textarea></p>
-        <button type="submit">Отправить</button>
-      </form>
-      <span class="modal-close">x</span>
-    </section>
+        <section class="modal modal-basket">
+          <h2>Напишите нам</h2>
+          <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+            <label for="user-name">Ваше имя</label>
+            <p><input type="text" name="user-name" id="user-name" placeholder="Представьтесь, пожалуйста"></p>
+            <label for="email">Ваш e-mail</label>
+            <p><input type="text" name="email" id="email" placeholder="Для отправки ответа"></p>
+            <label for="letter">Текст письма:</label>
+            <p><textarea id="letter" placeholder="В свободной форме"></textarea></p>
+            <button type="submit">Отправить</button>
+          </form>
+          <span class="modal-close">x</span>
+        </section>
     
   </body>  
 </html>
