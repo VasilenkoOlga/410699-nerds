@@ -21,20 +21,20 @@ a {
 }
 
 .main-header-logo:hover,
-.main-header-logo:focus{
+.main-header-logo:focus {
   opacity: 0.8;
 }
 
-.main-header-logo:active{
+.main-header-logo:active {
   opacity: 0.3;
 }
 .site-navigation,
-.basket a{
+.basket a {
   list-style: none;
 }
 
 .site-navigation a,
-.basket a{
+.basket a {
   color: #000000;
 }
 
@@ -190,7 +190,7 @@ a {
   list-style: none;
 }
 
-.about-company-right h4{
+.about-company-right h4 {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
@@ -208,20 +208,20 @@ a {
   color: #283136;
 }
 
-.partners li{
+.partners li {
   list-style: none;
 }
 
-.partners a{
+.partners a {
   opacity: 0.2;
 }
 
 .partners a:hover,
-.partners a:focus{
+.partners a:focus {
   opacity: 1;
 }
 
-.partners a:active{
+.partners a:active {
   opacity: 0.1;
 }
 
@@ -230,13 +230,13 @@ a {
   height: 308px;
   width: 319px;
 }
-.map-contacts b{
+.map-contacts b {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
 }
 
-.map-contacts p{
+.map-contacts p {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -248,14 +248,14 @@ a {
   color: #ffffff;
 }
 
-.footer-social b{
+.footer-social b {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
   color: #000000;
 }
   
-.footer-social p{
+.footer-social p {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -274,7 +274,7 @@ a {
 }
 
 .appointment-form input[type="text"],
-textarea{
+textarea {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -321,7 +321,7 @@ label {
 
 /* Стилизация каталога */
 
-header h1{
+header h1 {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -329,7 +329,7 @@ header h1{
 }
 
 legend,
-.sorting-title{
+.sorting-title {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -353,7 +353,7 @@ fieldset {
   background-color: #eeeeee;
 }
 
-.filter-option{
+.filter-option {
   list-style: none;
 }
 
@@ -395,22 +395,22 @@ fieldset {
   list-style: none;
 }
 
-.sorting-text-active {
-  color: rgba(0, 0, 0, 1);
-}
-
-.sorting .sorting-text {
+.sorting .sorting-link {
   color: rgba(0, 0, 0, 0.3);
 } 
 
-.sorting .sorting-text:hover,
-.sorting .sorting-text:focus {
+.sorting .sorting-link:hover,
+.sorting .sorting-link:focus {
   color: rgba(0, 0, 0, 0.6);
 } 
 
-.sorting .sorting-text:active {
+.sorting .sorting-link:active {
   color: rgba(0, 0, 0, 1);
 } 
+
+.sorting .sorting-link-active {
+  color: rgba(0, 0, 0, 1);
+}
 
 .sorting-control {
   list-style: none;
