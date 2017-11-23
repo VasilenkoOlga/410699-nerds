@@ -166,7 +166,7 @@ a {
   font-weight: 400;
 }
 
-.about-company-left p{
+.about-company-left p {
   font-size: 16px;
   line-height: 24px;
   color: #283136;
@@ -319,11 +319,11 @@ label {
 
 /* Стилизация каталога */
 
-header h1 {
+main h1 {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
-  color: #000000;
+  color: #000000; 
 }
 
 legend,
@@ -492,7 +492,6 @@ fieldset {
 body {
   margin: 0; 
   padding: 0;
-  background-image: url(nerds-index.jpg);
   background-size: 1440px auto;
   background-repeat: no-repeat;
 }
@@ -676,6 +675,8 @@ footer {
 .footer-social {
   display: flex;
   justify-content:flex-start;
+  height: 225px;
+  align-items: center;
 }
 
 .footer-social ul{
@@ -683,7 +684,7 @@ footer {
   margin: 0; 
   padding: 0;
   width: 260px;
-  height: 218px;
+  height: 80px;
   margin-right: 140px;
 
 }
@@ -697,3 +698,140 @@ footer {
 .visually-hidden {
   display: none;
 }
+
+.main-header-catalog .main-navigation { 
+  min-height: 132px; 
+  margin-bottom: 55px; 
+  background-color: transparent;
+  width: 100%;
+}
+
+.catalog-container {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+}
+
+.catalog-container h1 {
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  margin-top: 5px;
+  height: 55px;
+  padding-bottom: 108px;
+  margin-bottom: 55px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter { 
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin:0;
+  padding: 0;
+  width: 260px;
+  min-height: 772px;
+}
+
+fieldset {
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
+form fieldset {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin:0;
+  padding: 0;
+  width: 260px;
+}
+
+form fieldset:first-child {
+  min-height: 212px;
+  margin-bottom: 53px;
+}
+
+form fieldset:nth-child(2) {
+  min-height: 144px;
+  margin-bottom: 47px;
+}
+
+form fieldset:nth-child(3) {
+  min-height: 228px;
+  margin-bottom: 45px;
+}
+
+form fieldset:nth-child(4) {
+  height: 50px;
+}
+
+legend {
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-left {
+  width: 760px;
+  min-height: 2097px; 
+}
+
+.sorting {
+  margin:0;
+  padding: 0;
+  list-style: none;
+  height: 16px;
+  width: 760px;
+  margin-top: -20px;
+  margin-bottom: 60px;
+}
+
+.catalog-list {
+  margin:0;
+  padding: 0;
+  list-style: none;
+  width: 760px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 27px;
+}
+
+.catalog-list li {
+  height: 618px;
+  width: 360px;
+  margin-right: 40px;
+  margin-bottom: 33px;
+}
+
+.catalog-list li:nth-child(even) {
+   margin-right: 0;
+}
+
+.pagination {
+  margin:0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.pagination li {
+  margin:0;
+  padding: 0;
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  margin-right: 11px;
+  margin-bottom: 60px;
+}
+
+.pagination li:last-child {
+    width: 260px;
+}
+
