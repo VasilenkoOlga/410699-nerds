@@ -6,50 +6,69 @@
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,500,700,300&subset=latin,cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/outline.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/nerds-logo.svg" alt="Дизаин студия «Nёrds»" width="160" height="65">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <div class="basket">
-          <a href="#">Корзина</a>
+        <div class="main-navigation-wrapper">
+          <div class="container">
+            <a class="main-header-logo">
+            <img src="img/nerds-logo.svg" alt="Дизаин студия «Nёrds»" width="160" height="65">
+            </a>
+            <ul class="site-navigation">
+              <li><a href="#">Студия</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="basket">
+              <a href="#">Корзина</a>
+            </div>
+          </div>
         </div>
       </nav> 
       <div class="slider">
-        <input id="slide-1" type="radio" name="slide" value="slide-1" checked>       
-        <input id="slide-2" type="radio" name="slide" value="slide-2">
-		<input id="slide-3" type="radio" name="slide" value="slide-3">
-        <div class="slider-controls">
-		  <label for="slide-1"></label>
-		  <label for="slide-2"></label>
-		  <label for="slide-3"></label>
-				</div>
-        <div class="slider-slides">
-          <div class="slide-1 slider-slide">
-            <p class="slide-title">Долго, дорого, скрупулезно.</p>
-            <p class="slide-text">Математически выверенный дизайн для вашего сайта или   мобильного приложения.</p>
-            <a class="slide-btn" href="#">Узнать больше</a>
-            <img src="img/slide1.png" alt="Слайд 1">
-          </div>     
-          <div class="slide-2 slider-slide">
-            <p class="slide-title">Любим математику как никто другой</p>
-            <p class="slide-text">Никакого креатива, только математические формулы для   рассчета идеальных пропорций.</p>
-           <a class="slide-btn" href="#">Узнать больше</a>
-            <img src="img/slide2.png" alt="Слайд 2">
-          </div>     
-          <div class="slide-3 slider-slide" >
-           <p class="slide-title">Только ночь, только хардкор</p>
-           <p class="slide-text">Работать днём как все? Мы против этого. Ближе к полуночи   работа только начинается.</p>
-            <a class="slide-btn" href="#">Узнать больше</a>
-            <img src="img/slide3.png" alt="Слайд 3">
+          <input id="slide-1" type="radio" name="slide" value="slide-1" checked>       
+          <input id="slide-2" type="radio" name="slide" value="slide-2">
+		  <input id="slide-3" type="radio" name="slide" value="slide-3">
+          <div class="slider-controls">
+		   <label for="slide-1"></label>
+		   <label for="slide-2"></label>
+		   <label for="slide-3"></label>
+		  </div>
+          <div class="container">
+          <div class="slider-slides">
+            <div class="slide-1 slider-slide">
+              <div class="slider-text">
+                <p class="slide-title">Долго, дорого, скрупулезно.</p>
+                <p class="slide-text">Математически выверенный дизайн для   вашего сайта или   мобильного приложения.</p>
+                <a class="slide-btn" href="#">Узнать больше</a>
+              </div>
+              <div class="img">
+                <img src="img/slide1.png" alt="Слайд 1">
+              </div>
+            </div>     
+            <div class="slide-2 slider-slide">
+              <div class="slider-text">
+                <p class="slide-title">Любим математику как никто   другой</p>
+                <p class="slide-text">Никакого креатива, только   математические формулы для   рассчета идеальных пропорций.  </p>
+                <a class="slide-btn" href="#">Узнать больше</a>
+              </div>
+              <div class="img">
+                <img src="img/slide2.png" alt="Слайд 2">
+              </div>  
+            </div>
+            <div class="slide-3 slider-slide">
+              <div class="slider-text">
+                <p class="slide-title">Только ночь, только хардкор</p>
+                <p class="slide-text">Работать днём как все? Мы против   этого. Ближе к полуночи   работа только начинается.</p>
+                <a class="slide-btn" href="#">Узнать больше</a>
+              </div>
+              <div class="img">
+                <img src="img/slide3.png" alt="Слайд 3">
+                </div>
+              </div>
           </div>
         </div>
       </div>
@@ -134,7 +153,7 @@
         </div>
       </main>
       <footer>
-        <div class="map">
+        <div class="map container">
           <img src="img/map.jpg" alt="Карта">
           <img src="img/map-marker.png" alt="Маркер">
           <div class="map-contacts">
@@ -145,14 +164,16 @@
             <a class="btn btn-contacts" href="#">Напишите нам</a>
           </div>  
         </div> 
-        <div class="footer-social">
+        <div class="footer-social container">
           <ul>
             <li><a class="social-button vk" href="#">Вконтакте</a></li>
             <li><a class="social-button fb" href="#">Фейсбук</a></li>         
             <li><a class="social-button in" href="#">Инстаграм</a></li>
           </ul>
-          <b>Давайте дружить,это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей</p>
+          <div class="social-friend">
+            <b>Давайте дружить,это выгодно!</b>
+            <p>Скидка 10% для друзей из социальных сетей</p>
+          </div>
         </div>
       </footer> 
 

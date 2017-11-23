@@ -7,8 +7,6 @@ body {
   line-height: 24px;
   font-weight: 500;
   color: #000000;
-  
-  background-color: #ffffff;
 }
 
 a {
@@ -486,4 +484,216 @@ fieldset {
 .page a:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
+}
+
+
+/* Флексы */
+
+body {
+  margin: 0; 
+  padding: 0;
+  background-image: url(nerds-index.jpg);
+  background-size: 1440px auto;
+  background-repeat: no-repeat;
+}
+
+.main-header { 
+  min-height: 545px; 
+  margin-bottom: 80px; 
+  background-color: transparent;
+  width: 100%;
+} 
+
+.main-navigation { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 132px; 
+  background-color: transparent; 
+} 
+
+.main-header-logo {    
+/* Временно для сетки display: block; */
+  margin: 0; 
+  padding: 0; 
+  width: 160px; 
+  height: 65px; 
+  margin-top: 47px;
+  
+}
+
+.site-navigation { 
+  margin: 0; 
+  padding: 0; 
+  min-height: 132px; /* Временно для сетки */ 
+  background-color: transparent;
+  width: 492px;
+  list-style: none;
+} 
+
+.basket{ 
+  margin: 0; 
+  padding: 0; 
+  min-height: 132px; /* Временно для сетки */ 
+  width: 150px;
+  list-style: none; 
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider {
+  min-height: 413px;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.slider-slide {
+  margin-right: 30px;
+  width: 1160px;
+  height: 413px; 
+}
+
+.slider .container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 1160px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.slider-slide .img {
+  margin-right: 30px;
+  width: 698px; 
+  height: 413px; 
+}
+
+.slider-text {
+  width: 380px;
+  height: 413px;
+}
+
+.container .slider-slide{
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-slides .slide-2 {
+  display: none;
+}
+
+.slider-slides .slide-3 {
+  display: none;
+}
+
+.products-list {
+  display: flex;
+  margin: 0; 
+  padding: 0;
+  list-style: none;
+  min-height: 347px;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.products-item {
+  min-height: 347px;
+  width: 300px;
+}
+
+.products-item:last-child {
+  margin-right: 60px;
+}
+
+.about-company {
+  min-height: 450px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-company-left {
+  width: 660px;
+}
+
+.about-company-right {
+  width: 360px;
+}
+
+.partners {
+  min-height:180px;
+  margin-bottom: 80px;
+}
+
+.partners ul {
+  list-style: none;
+  margin: 0; 
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  justify-content: space-between;
+}
+
+.partners li {
+  list-style: none;
+  width: 300px;
+  height: 180px;
+}
+
+.partners li:first-child {
+  margin-left: -20px;
+}
+
+.partners li:last-child {
+  margin-right: -20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.map {
+  min-height: 416px;
+  width: 14400px;
+  margin-left: -120px;
+  margin-right: -120px;
+  display: flex;
+}
+
+.footer-social {
+  display: flex;
+  justify-content:flex-start;
+}
+
+.footer-social ul{
+  list-style: none;
+  margin: 0; 
+  padding: 0;
+  width: 260px;
+  height: 218px;
+  margin-right: 140px;
+
+}
+
+.promo {
+  width: 562px;
+  height: 218px;
+  padding-right: 200px;
+}
+
+.visually-hidden {
+  display: none;
 }
