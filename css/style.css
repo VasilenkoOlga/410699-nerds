@@ -770,29 +770,29 @@ main h1 {
   font-weight: 500;
   color: #000000; 
   background-color: #eeeeee;
+  width: 2000px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  padding-top: 5px;
+  padding-bottom: 108px;
+  margin-bottom: 55px;
 }
+
 
 .main-header-catalog .main-navigation { 
   min-height: 132px; 
-  margin-bottom: 55px; 
+  padding-bottom: 55px; 
   width: 100%;
   background-color: #eeeeee;
+  text-transform: uppercase;
 }
 
 .catalog-container {
   display: flex;
   flex-direction: column;
   justify-content:flex-start;
-}
-
-.catalog-container h1 {
-  margin: 0;
-  padding: 0;
-  align-self: center;
-  margin-top: 5px;
-  height: 55px;
-  padding-bottom: 108px;
-  margin-bottom: 55px;
 }
 
 .main-content {
@@ -1079,11 +1079,30 @@ legend {
   height: 16px;
   width: 760px;
   margin-top: -20px;
-  margin-bottom: 60px;
+  margin-bottom: 122px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sorting-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 360px;
+  margin-top: 25px;
 }
 
 .sorting-list {
+  margin:0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
   list-style: none;
+  display: flex;
+  white-space: nowrap;
+  width: 272px;
+  justify-content: space-between;
+  text-transform: uppercase;
 }
 
 .sorting .sorting-link {
@@ -1105,6 +1124,26 @@ legend {
 
 .sorting-control {
   list-style: none;
+  width: 40px;
+  display: flex;
+}
+
+.sorting-control .icon-down {
+  list-style: none;
+  display: block;
+  width: 11pxx;
+  height: 10px;
+  background-image: url(../img/icon-down-dir.svg);
+  background-repeat: no-repeat;
+}
+
+.sorting-control .icon-up {
+  list-style: none;
+  display: block;
+  width: 11pxx;
+  height: 10px;
+  background-image: url(../img/icon-up-dir.svg);
+  background-repeat: no-repeat;
 }
 
 .catalog-list {
@@ -1123,36 +1162,74 @@ legend {
   width: 360px;
   margin-right: 40px;
   margin-bottom: 33px;
+  position: relative;
+}
+
+.catalog-list li::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -40px;
+  width: 360px;
+  height: 40px;
+  background-image: url(../img/browser.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .catalog-list li:nth-child(even) {
    margin-right: 0;
 }
 
+.catalog-list-text{
+  display: block;
+  width: 360px;
+  height: 230px;
+  background-color: #eeeeee;
+}
+
 .item-title {
+  margin: 0;
+  padding: 0;
+  padding-top: 35px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
-  background-color: #eeeeee;
+  text-align: center;
 }
 
 .item-text {
+  margin: 0;
+  padding: 0;
+  padding-top: 34px;
+  padding-bottom: 34px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: #666666;
   background-color: #eeeeee;
+  text-align: center;
 }
 
 .btn-item-price {
+  margin: 0;
+  padding: 0;
+  padding: 16px 0;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #fb565a;
+  display: block;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  border: none;
+  margin: 0 80px; 
 }
 
 .btn-item-price:hover,
@@ -1215,12 +1292,3 @@ legend {
   background-color: #d5d5d5;
 }
 
-
-/* Флексы */
-/* Главная страница */
-body {
-  margin: 0; 
-  padding: 0;
-  background-size: 1440px auto;
-  background-repeat: no-repeat;
-}
