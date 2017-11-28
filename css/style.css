@@ -588,11 +588,23 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
-.map-contacts {
-  background-color: #ffffff;
-  height: 308px;
-  width: 319px;
+.map {
+  min-height: 416px;
+  width: 1400px;
+  margin-left: -120px;
+  margin-right: -120px;
+    display: flex;
 }
+
+.map-contacts {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 320px;
+  height: 310px;
+  border: 1px solid black;
+}
+
 .map-contacts b {
   font-size: 18px;
   line-height: 30px;
@@ -606,19 +618,6 @@ input[type="radio"].visually-hidden {
   color: #666666;
 }
 
-.map container img:first-child {
-  position: relative;
-  top: 0;
-  right: 0;
-}
-
-.map container img:nth-child(2) {
-  position: absolute;
-}
-
-.map container .map-contacts {
-  position: absolute;
-}
 
 .btn-contacts {
   background-color: #fb565a;
@@ -684,14 +683,6 @@ footer {
   margin-right: 140px;
   display: flex;
   justify-content: space-between;
-}
-
-.map {
-  min-height: 416px;
-  width: 1400px;
-  margin-left: -120px;
-  margin-right: -120px;
-  display: flex;
 }
 
 .promo {
@@ -1124,26 +1115,32 @@ legend {
 
 .sorting-control {
   list-style: none;
+  margin: 0;
+  padding: 0;
   width: 40px;
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .sorting-control .icon-down {
   list-style: none;
   display: block;
-  width: 11pxx;
+  width: 11px;
   height: 10px;
   background-image: url(../img/icon-down-dir.svg);
   background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .sorting-control .icon-up {
   list-style: none;
   display: block;
-  width: 11pxx;
+  width: 11px;
   height: 10px;
   background-image: url(../img/icon-up-dir.svg);
   background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .catalog-list {
@@ -1182,6 +1179,9 @@ legend {
 }
 
 .catalog-list-text{
+  position: absolute;
+  left: 0px;
+  top: 340px;
   display: block;
   width: 360px;
   height: 230px;
@@ -1191,7 +1191,7 @@ legend {
 .item-title {
   margin: 0;
   padding: 0;
-  padding-top: 35px;
+  padding-top: 33px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
