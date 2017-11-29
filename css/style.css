@@ -579,9 +579,9 @@ input[type="radio"].visually-hidden {
 }
 
 .partners ul {
-  list-style: none;
   margin: 0; 
   padding: 0;
+  list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -589,40 +589,60 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
+  margin: 0; 
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
   min-height: 416px;
-  width: 1400px;
-  margin-left: -120px;
-  margin-right: -120px;
-    display: flex;
+  width: 1440px;
+  display: flex;
+}
+
+.contacts-marker img {
+  display: block;
+  position: absolute;
+  left: 820px;
+  top: 90px;
 }
 
 .map-contacts {
-  margin: 0;
+  margin: 0; 
   padding: 0;
   display: block;
-  width: 320px;
-  height: 310px;
-  border: 1px solid black;
+  position: absolute;
+  left: 140px;
+  top: 55px;
+  background: #ffffff;
+  padding: 48px 50px;
 }
 
 .map-contacts b {
+  display: block;
+  margin: 0; 
+  padding: 0;
+  margin-bottom: 23px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
 }
 
 .map-contacts p {
+  display: block;
+  margin: 0; 
+  padding: 0;
+  margin-bottom: 18px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: #666666;
 }
 
-
 .btn-contacts {
+  display: block;
+  margin: 0;
+  padding: 0;
   background-color: #fb565a;
   color: #ffffff;
-  display: block;
   width: 220px;
   padding: 16px 0;
   font-size: 16px;
@@ -630,6 +650,9 @@ input[type="radio"].visually-hidden {
   text-align: center;
   text-decoration: none;
   border-radius: 3px;
+  border: none;
+  font-weight: 500;
+  text-transform: uppercase;
   border: none;
 }
 
@@ -707,7 +730,6 @@ textarea {
   border: 1px solid #d7dcde;
   color: rgba(68, 68, 68, 0.5);
 }
-
 
 .appointment-form input[type="text"]:hover,
 textarea:hover {
@@ -1151,14 +1173,13 @@ legend {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 27px;
 }
 
 .catalog-list li {
-  height: 618px;
+  height: 576px;
   width: 360px;
   margin-right: 40px;
-  margin-bottom: 33px;
+  margin-bottom: 74px;
   position: relative;
 }
 
@@ -1178,20 +1199,20 @@ legend {
    margin-right: 0;
 }
 
-.catalog-list-text{
+.catalog-list-text {
   position: absolute;
   left: 0px;
-  top: 340px;
-  display: block;
+  top: 345px;
   width: 360px;
   height: 230px;
   background-color: #eeeeee;
+  display: block;
 }
 
 .item-title {
   margin: 0;
   padding: 0;
-  padding-top: 33px;
+  padding-top: 27px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -1203,8 +1224,8 @@ legend {
 .item-text {
   margin: 0;
   padding: 0;
-  padding-top: 34px;
-  padding-bottom: 34px;
+  padding-top: 16px;
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -1244,41 +1265,60 @@ legend {
 .pagination {
   margin:0;
   padding: 0;
+  margin-top: -16px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 58px;
 }
 
 .pagination li {
   margin:0;
   padding: 0;
   list-style: none;
-  width: 50px;
-  height: 50px;
   margin-right: 11px;
-  margin-bottom: 60px;
-}
-
-.pagination li:last-child {
-    width: 260px;
 }
 
 .active-page a {
+  display: block;
+  padding: 14px 18px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   text-transform: uppercase;
   color: #000000;
   background-color: #ffffff;
-  border: 1px solid #dbdbdb;
+  border: 3px solid #dbdbdb;
+  border-radius: 3px;
 }
 
 .page a {
+  display: block;
+  padding: 17px 20px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: #000000;
   background-color: #eeeeee;
+  border-radius: 3px;
+}
+
+.pagination li:last-child a {
+  display: block;
+  margin: 0; 
+  padding: 0;
+  padding: 17px 0;
+  width: 260px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #eeeeee;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  border: none;
 }
 
 .page a:hover,
