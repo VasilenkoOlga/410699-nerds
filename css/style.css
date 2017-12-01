@@ -23,6 +23,11 @@ hr {
   opacity: 0.1;
 }
 
+sup {
+  margin: 0;
+  padding: 0;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -1275,7 +1280,7 @@ legend {
   width: 360px;
   height: 230px;
   background-color: #eeeeee;
-  display: block;
+  display: none;
 }
 
 .item-title {
@@ -1329,6 +1334,10 @@ legend {
 
 .btn-item-price:active {
   background-color: #d7373b;
+}
+
+.catalog-list a:hover + .catalog-list-text{
+  display: block;
 }
 
 .pagination {
