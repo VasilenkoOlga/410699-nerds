@@ -116,12 +116,10 @@
             <h2 class="visually-hidden">Товары</h2>
             <ul class="catalog-list">
               <li>
-                <a href="#">
-                  <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
-                </a>
+                <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
                 <div class="catalog-list-text">
                   <div class="item-description">
-                    <h3 class="item-title">Sedona</h3>
+                    <h3 class="item-title"><a href="#">Sedona</a></h3>
                     <p class="item-text">
                       Информационный сайт<br>
                       для туристов
@@ -133,12 +131,10 @@
                 </div>
               </li>
               <li>
-                <a href="#">
-                  <img src="img/img-pink.jpg" alt="Pink App" width="360" height="576">
-                </a>
+                <img src="img/img-pink.jpg" alt="Pink App" width="360" height="576">
                 <div class="catalog-list-text">
                   <div class="item-description">
-                    <h3 class="item-title">Pink App</h3>
+                    <h3 class="item-title"><a href="#">Pink App</a></h3>
                     <p class="item-text">
                       Продуктовый лендинг<br>
                       приложений для IOS и Android
@@ -150,12 +146,10 @@
                 </div>
               </li>
               <li>
-                <a href="#">
-                  <img src="img/img-barbershop.jpg" alt="Barbershop" width="360" height="576">
-                </a>  
+                <img src="img/img-barbershop.jpg" alt="Barbershop" width="360" height="576">
                 <div class="catalog-list-text">
                   <div class="item-description">
-                    <h3 class="item-title">Barbershop</h3>
+                    <h3 class="item-title"><a href="#">Barbershop</a></h3>
                     <p class="item-text">
                       Сайт салона красоты.<br>
                       Для мужчин, да.
@@ -167,12 +161,10 @@
                 </div> 
               </li>
               <li>
-                <a href="#">
-                  <img src="img/img-mishka.jpg" alt="Mishka" width="360" height="576">
-                </a>
+                <img src="img/img-mishka.jpg" alt="Mishka" width="360" height="576">
                 <div class="catalog-list-text">
                   <div class="item-description">
-                    <h3 class="item-title">Mishka</h3>
+                    <h3 class="item-title"><a href="#">Mishka</a></h3>
                     <p class="item-text">
                       Интернет магазин<br>
                       вязанных игрушек.
@@ -184,12 +176,10 @@
                 </div>
               </li>
               <li>
-                <a href="#">
-                  <img src="img/img-aplus.jpg" alt="A plus" width="360" height="576">
-                </a>
+                <img src="img/img-aplus.jpg" alt="A plus" width="360" height="576">
                 <div class="catalog-list-text">
                   <div class="item-description">
-                    <h3 class="item-title">A plus</h3>
+                    <h3 class="item-title"><a href="#">A plus</a></h3>
                     <p class="item-text">
                       Лендинг курсов повышения<br>
                       квалификации
@@ -201,12 +191,10 @@
                 </div>
               </li>
               <li>
-                <a href="#">
-                  <img src="img/img-kvast.jpg" alt="Кваст" width="360" height="576">
-                </a>
+                <img src="img/img-kvast.jpg" alt="Кваст" width="360" height="576">
                 <div class="catalog-list-text">
                   <div class="item-description">
-                    <h3 class="item-title">Кваст</h3>
+                    <h3 class="item-title"><a href="#">Кваст</a></h3>
                     <p class="item-text">
                       Промо-сайт производителя<br>
                       крафтового кваса
@@ -255,18 +243,24 @@
       </div>
     </footer> 
     
-        <section class="modal modal-basket">
+ <section class="modal modal-basket">
           <h2>Напишите нам</h2>
           <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-            <label for="user-name">Ваше имя</label>
-            <p><input type="text" name="user-name" id="user-name" placeholder="Представьтесь, пожалуйста"></p>
-            <label for="email">Ваш e-mail</label>
-            <p><input type="text" name="email" id="email" placeholder="Для отправки ответа"></p>
-            <label for="letter">Текст письма:</label>
-            <p><textarea id="letter" placeholder="В свободной форме"></textarea></p>
-            <button type="submit">Отправить</button>
+            <div class="name-email">
+              <div class="name">
+                <p><label for="user-name">Ваше имя:</label></p>
+                <p><input type="text" name="user-name" id="user-name"   placeholder="Представьтесь, пожалуйста"></p>
+              </div>
+              <div class="email">
+                <p><label for="email">Ваш e-mail:</label></p>
+                <p><input type="text" name="email" id="email" placeholder="Для отправки ответа"></p>
+              </div>  
+            </div>
+              <p><label for="letter">Текст письма:</label></p>
+              <p><textarea id="letter" placeholder="В свободной форме"></textarea></p>
+            <button class="btn-form" type="submit">Отправить</button>
           </form>
-          <span class="modal-close">x</span>
+          <button class="modal-close" type="button">x</button>
         </section>
     
   </body>  

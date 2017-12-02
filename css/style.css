@@ -772,32 +772,107 @@ footer {
   padding-right: 200px;
 }
 
+/* модальное окно */
+
+.modal-basket {
+  display: none;
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  color: #000000;
+  background-color: #ffffff;
+  width: 760px;
+  padding: 68px 100px;
+  margin-left: -480px;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.7);
+}
+
+.modal-close {
+  position: absolute;
+  top:78px;
+  right: 90px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: #ffffff;
+  border: 0;
+  cursor: pointer;
+}
+
+.name-email {
+  display: flex;
+  margin-bottom: 27px;
+}
+
+.name,
+.email {
+  margin: 0;
+  padding: 0;
+  margin-right: 40px;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  width: 28px;
+  height: 3px;
+  background-color: #fecccd;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
 .modal-basket h2 {
+  margin: 0;
+  margin-bottom: 38px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
   color: #000000;
 }
 
+.appointment-form p{
+  margin: 0;
+  margin-bottom: 5px; 
+}
+
 .appointment-form input[type="text"],
 textarea {
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
+  font: inherit;
   font-weight: 400;
-  border: 1px solid #d7dcde;
+  line-height: 18px;
+  box-sizing: border-box;
+  width: 360px;
+  padding: 14px 12px;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+  color: #b1b1b1;
   color: rgba(68, 68, 68, 0.5);
+}
+
+textarea {
+  margin-bottom: 35px;
+  width: 760px;
+  height: 118px;
+  padding: 12px 12px;
 }
 
 .appointment-form input[type="text"]:hover,
 textarea:hover {
-  border: 1px solid #b4b9bb;
+  border: 2px solid #b4b9bb;
   color: rgba(68, 68, 68, 0.5);
 }
 
 .appointment-form input[type="text"]:focus,
 textarea:focus {
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   color: rgba(68, 68, 68, 0.5);
 }
 
@@ -807,9 +882,6 @@ label {
   font-weight: 700;
 }
 
-.modal-close {
-  color: #fecccd;
-}
 
 .modal-close:hover {
   color: #fb565a;
@@ -819,15 +891,19 @@ label {
   color: #ffeeee;
 }
 
-.modal-basket button {
+.modal-basket .btn-form {
+  font: inherit;
+  font-weight: 400;
   display: block;
   width: 260px;
   padding: 16px 0;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
   text-align: center;
-  text-decoration: none;
+  text-decoration:none;
+  text-transform: uppercase;
   background-color: #fb565a;
   border-radius: 3px;
   border: none;
@@ -1283,6 +1359,11 @@ legend {
   display: none;
 }
 
+.item-title a{
+  text-decoration: none;
+  color: #000000;
+}
+
 .item-title {
   margin: 0;
   padding: 0;
@@ -1336,8 +1417,12 @@ legend {
   background-color: #d7373b;
 }
 
-.catalog-list a:hover + .catalog-list-text{
+.catalog-list li:hover .catalog-list-text{
   display: block;
+}
+
+.catalog-list li:first-child a + .catalog-list-text{
+  display: block; 
 }
 
 .pagination {
