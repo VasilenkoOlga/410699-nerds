@@ -23,9 +23,12 @@ hr {
   opacity: 0.1;
 }
 
-sup {
+.sup {
   margin: 0;
   padding: 0;
+  vertical-align:baseline;
+  font-size: 28px;
+  
 }
 
 .visually-hidden:not(:focus):not(:active),
