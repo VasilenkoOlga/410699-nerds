@@ -83,7 +83,7 @@ input[type="radio"].visually-hidden {
 .site-navigation { 
   margin: 0; 
   padding: 0; 
-  min-height: 106px; /* Временно для сетки */ 
+  min-height: 106px; 
   background-color: transparent;
   width: 440px;
   list-style: none;
@@ -104,7 +104,7 @@ input[type="radio"].visually-hidden {
 .basket{ 
   margin: 0; 
   padding: 0; 
-  min-height: 106px; /* Временно для сетки */ 
+  min-height: 106px; 
   width: 108px;
   list-style: none; 
   display: flex;
@@ -114,6 +114,19 @@ input[type="radio"].visually-hidden {
 
 .basket .basket-link {
   position: relative;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.basket a:hover,
+.basket a:focus {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.basket a:active {
+  color: #a6a6a6;
+
 }
 
 .basket-link::before {
@@ -128,18 +141,10 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
-.basket a:hover,
-.basket a:focus {
-  color: #fb565a;
+.basket-link:active::before {
+  opacity: 1;
 }
 
-.site-navigation a:active,
-.basket a:active {
-  color: #000000;
-  opacity: 0.3;
-}
 
 .container {
   width: 1160px;
@@ -739,6 +744,19 @@ footer {
   background-color: #e1e1e1;
 }
 
+.social-button:hover {
+  background-color: #e74246;
+}
+
+.social-button:active {
+  background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.social-button:active path{
+  fill: #e37376;
+}
+
 .footer-social b {
   margin: 0; 
   padding: 0;
@@ -824,6 +842,16 @@ footer {
   background-color: #fecccd;
 }
 
+.modal-close:hover::before,
+.modal-close:hover::after{
+  background-color: #fb565a;
+}
+
+.modal-close:active::before,
+.modal-close:active::after{
+  background-color: #ffeeee;
+}
+
 .modal-close::before {
   transform: rotate(45deg);
 }
@@ -876,9 +904,15 @@ textarea:hover {
 .appointment-form input[type="text"]:focus,
 textarea:focus {
   border: 2px solid #000000;
-  color: rgba(68, 68, 68, 0.5);
+  color: rgba(68, 68, 68, 1);
 }
 
+.appointment-form input[type="text"]:invalid,
+textarea:invalid {
+  border: 2px solid #e74246;
+  color: #e74246;
+}
+  
 label {
   font-size: 16px;
   line-height: 18px;
@@ -920,7 +954,7 @@ main h1 {
   font-weight: 500;
   color: #000000; 
   background-color: #eeeeee;
-  width: 2000px;
+  width:3000px;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -1158,11 +1192,21 @@ legend {
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:hover + label::before {
+  opacity: 1;
+}
+
+.filter-input-checkbox:disabled + label::before {
+  opacity: 0.1;
 }
 
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
+  background-image:none;
   left: -35px;
   top: -3px;
   width: 27px;
@@ -1170,6 +1214,15 @@ legend {
   background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:checked:hover + label::after {
+  opacity: 1;
+}
+
+.filter-input-checkbox:checked:disabled + label::after {
+  opacity: 0.1;
 }
 
 .filter-input-radio + label::before {
@@ -1182,18 +1235,37 @@ legend {
   background-image: url(../img/radio-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.4;
+}
+
+.filter-input-radio:hover + label::before {
+  opacity: 1;
+}
+
+.filter-input-radio:disabled + label::before {
+  opacity: 0.1;
 }
 
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
-  left: -35px;
-  top: -3px;
+  left: -28px;
+  top: 4px;
   width: 25px;
   height: 25px;
-  background-image: url(../img/radio-on.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  opacity: 0.4;
+  width: 10px;
+  height: 10px;
+  background-color: #4d4d4d;
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked:hover + label::after {
+  opacity: 1;
+}
+
+.filter-input-radio:checked:disabled + label::after {
+  opacity: 0.1;
 }
 
 .filter-option:hover label {
@@ -1228,8 +1300,10 @@ legend {
   background-color: #dfdfdf;
 }
 .filter-button:active {
+  outline: 0; 
   color: #959595;
   background-color: #d5d5d5;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .main-left {
@@ -1306,6 +1380,15 @@ legend {
   background-image: url(../img/icon-down-dir.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.1;
+}
+
+.icon-down:hover {
+  opacity: 0.4;
+}
+
+.icon-down:active {
+  opacity: 1;
 }
 
 .sorting-control .icon-up {
@@ -1316,6 +1399,15 @@ legend {
   background-image: url(../img/icon-up-dir.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.1;
+}
+
+.icon-up:hover {
+  opacity: 0.4;
+}
+
+.icon-up:active {
+  opacity: 1;
 }
 
 .catalog-list {
@@ -1346,6 +1438,11 @@ legend {
   background-image: url(../img/browser.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.12;
+}
+
+.catalog-list li:hover::before {
+  opacity: 1;
 }
 
 .catalog-list li:nth-child(even) {
@@ -1418,6 +1515,7 @@ legend {
 
 .btn-item-price:active {
   background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .catalog-list li:hover .catalog-list-text{
@@ -1488,7 +1586,8 @@ legend {
 }
 
 .page a:hover,
-.page a:focus {
+.page a:focus,
+.pagination li:hover:last-child a{
   color: #000000;
   background-color: #dfdfdf;
 }
@@ -1496,5 +1595,6 @@ legend {
 .page a:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
