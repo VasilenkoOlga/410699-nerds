@@ -735,11 +735,12 @@ footer {
 }
 
 .social-button {
+  margin-top: -5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80px;
-  width: 80px;
+  height: 78px;
+  width: 78px;
   border-radius: 50%;
   background-color: #e1e1e1;
 }
@@ -765,7 +766,7 @@ footer {
   line-height: 36px;
   font-weight: 700;
   color: #000000;
-  margin-top: 13px;
+  margin-top: 10px;
 }
   
 .footer-social p {
@@ -919,7 +920,6 @@ label {
   font-weight: 700;
 }
 
-
 .modal-close:hover {
   color: #fb565a;
 }
@@ -954,7 +954,7 @@ main h1 {
   font-weight: 500;
   color: #000000; 
   background-color: #eeeeee;
-  width:3000px;
+  min-width:100%;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -971,7 +971,6 @@ main h1 {
   background-color: #eeeeee;
   text-transform: uppercase;
 }
-
 
 .site-navigation .active{
   position: relative;
@@ -1203,7 +1202,7 @@ legend {
   opacity: 0.1;
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
   background-image:none;
@@ -1217,11 +1216,11 @@ legend {
   opacity: 0.4;
 }
 
-.filter-input-checkbox:checked:hover + label::after {
+.filter-input-checkbox:checked:hover + label::before {
   opacity: 1;
 }
 
-.filter-input-checkbox:checked:disabled + label::after {
+.filter-input-checkbox:checked:disabled + label::before {
   opacity: 0.1;
 }
 
@@ -1249,13 +1248,13 @@ legend {
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
-  left: -28px;
-  top: 4px;
+  left: -27px;
+  top: 5px;
   width: 25px;
   height: 25px;
   opacity: 0.4;
-  width: 10px;
-  height: 10px;
+  width: 9px;
+  height: 9px;
   background-color: #4d4d4d;
   border-radius: 50%;
 }
@@ -1487,6 +1486,7 @@ legend {
   color: #666666;
   background-color: #eeeeee;
   text-align: center;
+  white-space: nowrap;
 }
 
 .btn-item-price {
