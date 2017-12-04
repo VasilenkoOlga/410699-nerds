@@ -28,7 +28,6 @@ hr {
   padding: 0;
   vertical-align:baseline;
   font-size: 28px;
-  
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -101,7 +100,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 13px;
 }
 
-.basket{ 
+.basket { 
   margin: 0; 
   padding: 0; 
   min-height: 106px; 
@@ -476,7 +475,6 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   font-weight: 700; 
   padding-bottom: 9px;
-  
 }
 
 .about-company-left ul {
@@ -717,6 +715,16 @@ input[type="radio"].visually-hidden {
   margin-top: 37px;
 }
 
+.btn-contacts:hover {
+  background-color: #e74246;
+}
+
+.btn-contacts:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -844,12 +852,12 @@ footer {
 }
 
 .modal-close:hover::before,
-.modal-close:hover::after{
+.modal-close:hover::after {
   background-color: #fb565a;
 }
 
 .modal-close:active::before,
-.modal-close:active::after{
+.modal-close:active::after {
   background-color: #ffeeee;
 }
 
@@ -870,7 +878,7 @@ footer {
   color: #000000;
 }
 
-.appointment-form p{
+.appointment-form p {
   margin: 0;
   margin-bottom: 5px; 
 }
@@ -1427,6 +1435,11 @@ legend {
   position: relative;
 }
 
+li img {
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+}
+
 .catalog-list li::before {
   content: "";
   position: absolute;
@@ -1453,12 +1466,14 @@ legend {
   left: 0px;
   top: 345px;
   width: 360px;
-  height: 230px;
+  min-height: 210px;
+  z-index: 2;
   background-color: #eeeeee;
   display: none;
+  padding-bottom: 20px;
 }
 
-.item-title a{
+.item-title a {
   text-decoration: none;
   color: #000000;
 }
@@ -1477,16 +1492,13 @@ legend {
 
 .item-text {
   margin: 0;
-  padding: 0;
-  padding-top: 16px;
-  padding-bottom: 30px;
+  padding: 16px 10px 30px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: #666666;
   background-color: #eeeeee;
   text-align: center;
-  white-space: nowrap;
 }
 
 .btn-item-price {
@@ -1518,11 +1530,11 @@ legend {
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
-.catalog-list li:hover .catalog-list-text{
+.catalog-list li:hover .catalog-list-text {
   display: block;
 }
 
-.catalog-list li:first-child a + .catalog-list-text{
+.catalog-list li:first-child a + .catalog-list-text {
   display: block; 
 }
 
