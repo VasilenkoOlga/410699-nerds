@@ -108,10 +108,11 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a,
 .basket a {
+  line-height: 30px;
   list-style: none;
   display: block;
   color: #000000;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 }
 
 .basket { 
@@ -151,7 +152,7 @@ input[type="radio"].visually-hidden {
 .basket-link::before {
   content: "";
   position: absolute;
-  top: 4px;
+  top: 7px;
   left: -40px;
   width: 15px;
   height: 15px;
@@ -225,7 +226,7 @@ input[type="radio"].visually-hidden {
   z-index: 1; 
   width: 18px;
   height: 18px;
-  background: #ffffff;
+  background-color: #ffffff;
   border-radius: 50%;
 }
 
@@ -356,6 +357,9 @@ input[type="radio"].visually-hidden {
 }
 
 .products-item p {
+  margin: 0; 
+  padding: 0;
+  width: 250px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -501,7 +505,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 24px;
   color: #283136;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 40px;
 }
 
@@ -547,7 +551,7 @@ input[type="radio"].visually-hidden {
   z-index: 1; 
   width: 25px;
   height: 2px;
-  background: #fb565a;
+  background-color: #fb565a;
 }
 
 .about-company-right {
@@ -607,6 +611,7 @@ input[type="radio"].visually-hidden {
   width: 120px;
   font-size: 45px;
   line-height: 20px;
+  font-weight: 700;
   color: #000000;
   margin-bottom: 32px;
 }
@@ -695,7 +700,7 @@ input[type="radio"].visually-hidden {
   z-index: 1; 
   width: 2px;
   height: 53px;
-  background: #eeeeee;
+  background-color: #eeeeee;
 }
 
 .partners li:nth-child(2)::after {
@@ -706,7 +711,7 @@ input[type="radio"].visually-hidden {
   z-index: 1; 
   width: 2px;
   height: 53px;
-  background: #eeeeee;
+  background-color: #eeeeee;
 }
 
 .partners li:nth-child(3)::after {
@@ -717,7 +722,7 @@ input[type="radio"].visually-hidden {
   z-index: 1; 
   width: 2px;
   height: 53px;
-  background: #eeeeee;
+  background-color: #eeeeee;
 }
 
 .map {
@@ -753,7 +758,7 @@ input[type="radio"].visually-hidden {
   z-index: 11;
   left: 140px;
   top: 55px;
-  background: #ffffff;
+  background-color: #ffffff;
   padding: 48px 50px;
 }
 
@@ -1053,7 +1058,7 @@ label {
 
 .modal-basket .btn-form {
   font: inherit;
-  font-weight: 400;
+  font-weight: 500;
   display: block;
   width: 260px;
   padding: 16px 0;
@@ -1069,7 +1074,7 @@ label {
   border: none;
 }
 .btn-form:hover {
-background-color: #e74246;
+  background-color: #e74246;
 }
 
 .btn-form:active {
@@ -1212,7 +1217,7 @@ main h1 {
   z-index: 1; 
   width: 75px;
   height: 2px;
-  background: #fb565a;
+  background-color: #fb565a;
 }
 
 .catalog-container {
@@ -1302,7 +1307,6 @@ form fieldset {
 
 .range-controls {
   position: relative;
-  
   height: 41px;
   margin-bottom: 15px;
   padding-top: 42px;
@@ -1314,13 +1318,13 @@ form fieldset {
 
 .range-controls .scale {
   height: 2px;
-  background: #d7dcde;
+  background-color: #d7dcde;
 }
 
 .range-controls .bar {
   width: 70%;
   height: 2px;
-  background: #00ca74;
+  background-color: #00ca74;
 }
 
 .range-controls .toggle {
@@ -1367,7 +1371,7 @@ form fieldset {
   color: #283136;
   border: none;
   border-radius: 5px;
-  background: #f1f1f1;
+  background-color: #f1f1f1;
 }
 
 .max-price {
@@ -1397,6 +1401,7 @@ legend {
   margin:0;
   padding: 0;
   list-style: none;
+  line-height: 30px;
 }
 
 .range-filter label {
@@ -1530,6 +1535,7 @@ legend {
 } 
 
 .filter-button {
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -1570,6 +1576,7 @@ legend {
   list-style: none;
   height: 16px;
   width: 760px;
+  line-height: 18px;
   margin-top: -20px;
   margin-bottom: 122px;
   display: -webkit-box;
@@ -1600,6 +1607,7 @@ legend {
   padding: 0;
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1765,13 +1773,14 @@ li img {
 
 .item-text {
   margin: 0;
+  width: 360px;
   padding: 16px 10px 30px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: #666666;
   background-color: #eeeeee;
-  text-align: center;
+  text-align: center;  
 }
 
 .btn-item-price {
@@ -1887,4 +1896,3 @@ li img {
   -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
           box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
-
