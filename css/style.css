@@ -731,7 +731,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   position: relative;
   min-height: 416px;
-  width: 1440px;
+  max-width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -741,6 +741,8 @@ input[type="radio"].visually-hidden {
   position: absolute;
   z-index: 10;
   border:0;
+  width: 100%;
+  min-height: 416px;
 }
 
 .contacts-marker img {
@@ -1072,6 +1074,7 @@ label {
   background-color: #fb565a;
   border-radius: 3px;
   border: none;
+  cursor: pointer; 
 }
 .btn-form:hover {
   background-color: #e74246;
@@ -1551,6 +1554,7 @@ legend {
   text-decoration: none;
   border-radius: 3px;
   border: none;
+  cursor: pointer; 
 }
 
 .filter-button:hover,
@@ -1745,7 +1749,7 @@ li img {
 .catalog-list-text {
   position: absolute;
   left: 0px;
-  top: 345px;
+  bottom: 0;
   width: 360px;
   min-height: 210px;
   z-index: 2;
@@ -1773,14 +1777,18 @@ li img {
 
 .item-text {
   margin: 0;
-  width: 360px;
+  padding: 0; 
+  margin: 0 auto;
+  width: 190px;
+  text-align: center;  
   padding: 16px 10px 30px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: #666666;
   background-color: #eeeeee;
-  text-align: center;  
+  height: 36px;
+  overflow-y:auto;
 }
 
 .btn-item-price {
