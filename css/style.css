@@ -211,6 +211,7 @@ input[type="radio"].visually-hidden {
 .slider-controls label {
   position: relative;
   display: inline-block;
+  text-align:left;
   width: 18px;
   height: 18px;
   padding: 8px;
@@ -492,6 +493,7 @@ input[type="radio"].visually-hidden {
   margin: 0; 
   padding: 0;
   display: inline-block;
+  text-align: left;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -502,6 +504,7 @@ input[type="radio"].visually-hidden {
   margin: 0; 
   padding: 0;
   display: inline-block;
+  text-align: left;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
@@ -513,6 +516,7 @@ input[type="radio"].visually-hidden {
   margin: 0; 
   padding: 0;
   display: inline-block;
+  text-align: left;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
@@ -576,6 +580,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   list-style: none;
   display:inline-block;
+  text-align: left;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
@@ -879,6 +884,7 @@ footer {
   margin: 0; 
   padding: 0;
   display: inline-block;
+  text-align: left;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
@@ -1781,7 +1787,7 @@ li img {
   display: inline-block;
   width: 230px;
   text-align: center;  
-  padding: 16px 65px 30px;
+  padding: 16px 65px 20px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
