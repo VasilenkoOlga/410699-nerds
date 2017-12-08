@@ -1901,7 +1901,7 @@ li img {
 
 .page a:hover,
 .page a:focus,
-.pagination li:hover:last-child a{
+.page:hover:last-child a{
   color: #000000;
   background-color: #dfdfdf;
 }

@@ -12,12 +12,11 @@ var storage = localStorage.getItem("user");
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
-  
   if (storage) {
     user.value = storage;
     email.focus();
   } else {
-  user.focus();
+    user.focus();
   }
 });
   
@@ -28,13 +27,13 @@ close.addEventListener("click", function (evt) {
 })
   
 form.addEventListener("submit", function (evt) {
-  if (!user.value || !email.value) {
   evt.preventDefault();
-  popup.classList.add("modal-error");
-  popup.offsetWidth = popup.offsetWidth;
-  popup.classList("modal-error");
-  }
-  else {
+  if (!user.value || !email.value) {
+    evt.preventDefault();
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
+  } else {
     localStorage.setItem("user", user.value);
   }
 })
