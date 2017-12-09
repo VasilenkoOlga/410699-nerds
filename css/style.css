@@ -89,20 +89,16 @@ input[type="radio"].visually-hidden {
 .site-navigation { 
   margin: 0; 
   padding: 0; 
-  min-height: 106px; 
   background-color: transparent;
-  width: 440px;
+  width: 520px;
   list-style: none;
-  margin-left: -48px;
+  margin: 63px 0 0 -47px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content:center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 } 
 
 .site-navigation a,
@@ -111,13 +107,16 @@ input[type="radio"].visually-hidden {
   list-style: none;
   display: block;
   color: #000000;
-  margin-bottom: 10px;
+}
+
+.site-navigation li {
+  margin: 13px 23px 0;
 }
 
 .basket { 
   margin: 0; 
   padding: 0; 
-  min-height: 106px; 
+  margin-top: 76px;
   width: 108px;
   list-style: none; 
   display: -webkit-box; 
@@ -126,9 +125,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+          align-items: flex-start;
 }
 
 .basket .basket-link {
@@ -737,10 +734,11 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   position: relative;
   min-height: 416px;
-  max-width: 1440px;
+  max-width:;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .map iframe {
@@ -768,6 +766,13 @@ input[type="radio"].visually-hidden {
   top: 55px;
   background-color: #ffffff;
   padding: 48px 50px;
+}
+
+.map-content {
+  display: flex;
+  max-width:1440px;
+  margin:0 auto;
+  position:relative;
 }
 
 .map-contacts b {
@@ -1901,12 +1906,13 @@ li img {
 
 .page a:hover,
 .page a:focus,
-.page:hover:last-child a{
+.page:last-child a:hover {
   color: #000000;
   background-color: #dfdfdf;
 }
 
-.page a:active {
+.page a:active,
+.page:last-child a:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
   -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
